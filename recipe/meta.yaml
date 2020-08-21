@@ -1,6 +1,6 @@
 {% set owner = "moble" %}
 {% set name = "quaternionic" %}
-{% set version = "0.1.2" %}
+{% set version = "0.1.4" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://github.com/{{ owner }}/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: cbbd78af8e826af291c7dad67436c8fa65f0366e10b5619f52581df20d402cf8
+  sha256: 689c8594a2548bafc514b441e52bfa1625feaf59b50bfa628f8737179052dac5
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -41,13 +41,13 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Interpret numpy arrays as quaternionic arrays with numba acceleration'
+  summary: Interpret numpy arrays as quaternionic arrays with numba acceleration
   description: |
-      This package subclasses numpy's array type, interpreting the array as an
-      array of quaternions, and accelerating the algebra using numba. There is
-      also basic initial support for symbolic manipulation of quaternions by
-      creating quaternionic arrays with sympy symbols as elements, though this
-      is a work in progress.
+    This package subclasses numpy's array type, interpreting the array as an
+    array of quaternions, and accelerating the algebra using numba. There is
+    also basic initial support for symbolic manipulation of quaternions by
+    creating quaternionic arrays with sympy symbols as elements, though this
+    is a work in progress.
   doc_url: https://quaternionic.readthedocs.io/
   dev_url: https://github.com/moble/quaternionic
 
