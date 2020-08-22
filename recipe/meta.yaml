@@ -1,14 +1,14 @@
-{% set owner = "moble" %}
 {% set name = "quaternionic" %}
-{% set version = "0.1.5" %}
+{% set version = "0.1.8" %}
+{% set sha256 = "e127aa95f490a2b8e6d9bfb5ad970a9ef97c6dcde894788bb5db16140785bba4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/{{ owner }}/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 3da9a331e4ef3c7756ae976da5e78775cbc89050353691c3bec7440989cda7e0
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
   noarch: python
