@@ -29,12 +29,6 @@ requirements:
 test:
   imports:
     - quaternionic
-  requires:
-    - pytest >=6.0
-  source_files:
-    - tests
-  commands:
-    - pytest  # Takes ~10 seconds
 
 about:
   home: https://github.com/moble/quaternionic
