@@ -13,14 +13,12 @@ source:
 build:
   noarch: python
   number: 0
-  #script: {{ PYTHON }} -m pip install --user --pre poetry -U && {{ PYTHON }} -m pip install . -vv
-  script: curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | {{ PYTHON }} && {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install --no-use-pep517 . -vv
 
 requirements:
   host:
     - python >=3.6
     - pip >=20.0.2
-    - poetry
   run:
     - python >=3.6
     - numpy >=1.13
