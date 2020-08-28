@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m poetry self update && {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install --user --pre poetry -U && {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
