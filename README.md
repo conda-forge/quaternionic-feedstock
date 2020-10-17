@@ -5,9 +5,13 @@ Home: https://github.com/moble/quaternionic
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/quaternionic-feedstock/blob/master/LICENSE.txt)
 
 Summary: Interpret numpy arrays as quaternionic arrays with numba acceleration
+
+Development: https://github.com/moble/quaternionic
+
+Documentation: https://quaternionic.readthedocs.io/
 
 This package subclasses numpy's array type, interpreting the array as an
 array of quaternions, and accelerating the algebra using numba. There is
