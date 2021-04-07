@@ -1,6 +1,6 @@
 {% set name = "quaternionic" %}
-{% set version = "0.3.4" %}
-{% set sha256 = "19b9e7e39b3d780e1753dbc9c6617ab7c4405539d562c524e0ef2cdd6fbafdf0" %}
+{% set version = "0.4.0" %}
+{% set sha256 = "302626fc625c1ea65e3fdee4e7cdbe122beb6bf65e4ed7ea8ecf4d79e3d3ad45" %}
 
 package:
   name: {{ name|lower }}
