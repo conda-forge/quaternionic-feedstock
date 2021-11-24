@@ -1,6 +1,6 @@
 {% set name = "quaternionic" %}
-{% set version = "1.0.0" %}
-{% set sha256 = "43c25bf337a7c04a673141f6148120c1a7c9d0a0e6a679ca831d6f02bf3c71b4" %}
+{% set version = "1.0.1" %}
+{% set sha256 = "ea69733d7311784963922bf08cc0c9c938b62fee2f91219f56544ff30658c10e" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,7 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.6,<3.10
     - pip >=20.0.2
   run:
     - python >=3.6
