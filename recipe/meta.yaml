@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: /bin/rm -f pyproject.toml && {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -21,9 +21,9 @@ requirements:
     - pip >=20.0.2
   run:
     - python >=3.8
-    - numpy >=1.19
-    - scipy >=1.0
-    - numba >=0.55
+    - numpy
+    - scipy
+    - numba
 
 test:
   imports:
