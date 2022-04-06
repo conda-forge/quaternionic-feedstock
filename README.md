@@ -5,7 +5,7 @@ Home: https://github.com/moble/quaternionic
 
 Package license: MIT
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/quaternionic-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/quaternionic-feedstock-1-feedstock/blob/main/LICENSE.txt)
 
 Summary: Interpret numpy arrays as quaternionic arrays with numba acceleration
 
@@ -26,8 +26,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10529&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/quaternionic-feedstock?branchName=main">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/quaternionic-feedstock-1-feedstock?branchName=main">
       </a>
     </td>
   </tr>
