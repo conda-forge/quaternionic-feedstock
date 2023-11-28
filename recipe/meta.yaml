@@ -13,12 +13,13 @@ source:
 build:
   noarch: python
   number: 0
-  script: /bin/rm -f pyproject.toml && {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python >=3.8,<3.11
     - pip >=20.0.2
+    - hatchling
   run:
     - python >=3.8
     - numpy
