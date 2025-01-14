@@ -1,6 +1,6 @@
 {% set name = "quaternionic" %}
-{% set version = "1.0.13" %}
-{% set sha256 = "d44f7a539b9363f0c9c65acc08a7db8861acbceffb012b79ed291d1a20cfd3b2" %}
+{% set version = "1.0.14" %}
+{% set sha256 = "31224757b6419a0a6380c27aeb3c0a9b8037a84e68ccf809d8953a8fd42d91e4" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
