@@ -1,13 +1,13 @@
 {% set name = "quaternionic" %}
-{% set version = "1.0.17" %}
-{% set sha256 = "1c62897f186b669b3ec9acff601576d2e9b600ff266e2bfc183bbd93f9209612" %}
+{% set version = "1.0.18" %}
+{% set sha256 = "9c5ee261650a52d09b9319e66b59dfa69d0b2025ab0db3eba6dff6ec63f5443b" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
